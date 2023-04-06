@@ -61,7 +61,7 @@ include '../resources/views/admin/header.php';
       <div class="card-body">
         <a class="btn btn-primary" href="/create-product">Thêm sản phẩm</a>
         <h2 class="card-title mt-2">Danh sách sản phẩm</h2>
-        <form class="boloc" action="index.php?act=list_product" method="post">
+        <!-- <form class="boloc" action="index.php?act=list_product" method="post">
           <div class="boloc2 form-group">
             <select style="width: 11rem;" class="form-select" name="iddm" id="tt">
               <option value="0" selected>Tất cả</option>
@@ -69,10 +69,10 @@ include '../resources/views/admin/header.php';
             </select>
             <button type="submit" class="btn btn-primary" name="search_dm" value="Search">Tìm kiếm</button>
           </div>
-        </form>
+        </form> -->
 
         <div class="table-responsive">
-          <table class="table text-center table-bordered table1">
+          <table id="example" class="table text-center table-bordered table1">
             <thead>
               <tr>
                 <th style="width: 9%;">#</th>
@@ -108,3 +108,8 @@ include '../resources/views/admin/header.php';
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function() {
+    $('#example').DataTable();
+  });
+</script>

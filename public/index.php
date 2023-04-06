@@ -33,6 +33,7 @@ Router::get('/delete-user', [UserController::class, 'delete']);
 Router::get('/logoutAdmin', [UserController::class, 'logoutAdmin']);
 
 //product
+Router::get('/', [ProductController::class, 'index']);
 Router::get('/products', [ProductController::class, 'index']);
 Router::get('/create-product', [ProductController::class, 'create']);
 Router::post('/create-product', [ProductController::class, 'setData']);

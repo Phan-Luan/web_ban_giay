@@ -34,7 +34,7 @@ include '../resources/views/admin/header.php';
         <a class="btn btn-primary" href="/create-user">Thêm khách hàng</a>
         <h4 class="card-title mt-3">Danh sách khách hàng</h4>
         <div class="table-responsive">
-          <table class="table table-bordered text-center table1">
+          <table id="example" class="table table-bordered text-center table1">
             <thead>
               <tr>
                 <th style="width: 5%;">#</th>
@@ -82,3 +82,8 @@ include '../resources/views/admin/header.php';
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function() {
+    $('#example').DataTable();
+  });
+</script>

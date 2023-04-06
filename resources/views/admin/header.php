@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="/assets/logo.png" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap5.min.css">
+  <!-- Thư viện JavaScript của Bootstrap và jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"></script>
   <title>Karma Admin</title>
 </head>
 
@@ -70,7 +75,7 @@
         <li class="nav-item nav-profile">
           <a href="/" class="nav-link">
             <div class="nav-profile-image">
-            <img src="/images/1632527371706.jpg" alt="image">
+              <img src="/images/1632527371706.jpg" alt="image">
               <span class="login-status online"></span>
               <!--change to offline or busy as needed-->
             </div>

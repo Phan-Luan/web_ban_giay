@@ -54,7 +54,7 @@ include '../resources/views/admin/header.php';
       <div class="card-body">
         <h4 class="card-title">Danh sách bình luận</h4>
         <div class="table-responsive">
-          <table class="table text-center table-bordered table1">
+          <table id="example" class="table text-center table-bordered table1">
             <thead>
               <tr>
                 <th style="width: 5%;">#</th>
@@ -73,12 +73,12 @@ include '../resources/views/admin/header.php';
               foreach ($comments as $comment) : ?>
                 <tr>
                   <td><?= $index++ ?></td>
-                  <td><?= $comment->id?></td>
-                  <td><?= $comment->username?></td>
-                  <td><?= $comment->content?></td>
-                  <td><?= $comment->id?></td>
-                  <td><img src="images/<?= $comment->image?>" alt=""></td>
-                  <td><?= $comment->date?></td>
+                  <td><?= $comment->id ?></td>
+                  <td><?= $comment->username ?></td>
+                  <td><?= $comment->content ?></td>
+                  <td><?= $comment->id ?></td>
+                  <td><img src="images/<?= $comment->image ?>" alt=""></td>
+                  <td><?= $comment->date ?></td>
                   <td class="btn1"><a href="delete-comment?id=<?= $comment->id ?>" onclick="return confirm(`Bạn muốn xóa?`)" ; id="delete"><input class="btn btn-danger btn2" type="button" value="Xóa"></a></td>
                 </tr>
               <?php endforeach ?>
@@ -89,14 +89,8 @@ include '../resources/views/admin/header.php';
     </div>
   </div>
 </div>
-<!-- <div class="thaotac">
-  <div class="">
-    <input class="btn btn-primary" type="button" value="Chọn tất cả">
-  </div>
-  <div class="">
-    <input class="btn btn-primary" type="button" value="Bỏ chọn tất cả">
-  </div>
-  <div class="">
-    <input class="btn btn-danger" type="button" onclick="return confirm('Bạn muốn xóa?')" ; value="Xóa mục đã chọn">
-  </div>
-</div> -->
+<script>
+  $(document).ready(function() {
+    $('#example').DataTable();
+  });
+</script>
