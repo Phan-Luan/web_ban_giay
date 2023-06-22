@@ -1,6 +1,7 @@
 <h3>Run Project</h1>
-<p> cd public</p>
-<p>php -S localhost:3003</p>
+<p><strong>Bước 1:</strong> Mở Terminal</p>
+<p><strong>Bước 2:</strong> Trỏ vào thư mục public: cd public</p>
+<p><strong>Bước 3:</strong> run Project php -S localhost:3003</p>
 <h3>Chức năng</h3>
 <ul>
   <li>Admin</li>
