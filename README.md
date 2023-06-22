@@ -4,6 +4,6 @@
 <h3>Chức năng</h3>
 <ul>
   <li>Admin
-  <ol>Thêm, sửa, xoá<ol>
+  <li>Thêm, sửa, xoá<li>
   </li>
 </ul>
