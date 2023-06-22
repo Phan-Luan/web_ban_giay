@@ -3,7 +3,7 @@
 <p>php -S localhost:3003</p>
 <h3>Chức năng</h3>
 <ul>
-  <li>Admin
+  <ul>Admin
   <li>Thêm, sửa, xoá<li>
-  </li>
+  </ul>
 </ul>
