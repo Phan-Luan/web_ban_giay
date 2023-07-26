@@ -88,7 +88,7 @@ include '../resources/views/header.php';
               </div>
               <span>3 Reviews</span>
             </div>
-            <p class="mt-2">Số hàng còn lại: <?= $product->amount ?></p>
+            <p class="mt-2">Số hàng còn lại: <?= $product->amount ?></p><?php echo $product->amount==0?'<span class="text-danger">Hết hàng</span>':''?>
             <div class="product-price-discount"><span>$ <?= $product->price ?></span></div>
           </div>
           <p><?= $product->mota ?></p>
@@ -106,8 +106,7 @@ include '../resources/views/header.php';
             </div>
             <div class="product-count">
               <label for="size">Quantity</label>
-              <input class="form-control" style="border-color: #dee2e6;width: 100px;border-radius: 5px;" value="0" id="product_amount" name="amount" type="number" min="1" max="<?= $product->amount ?>">
-
+              <input <?php echo $product->amount==0?'readonly':''?> class="form-control" style="border-color: #dee2e6;width: 100px;border-radius: 5px;" value="0" id="product_amount" name="amount" type="number" min="1" max="<?= $product->amount ?>">
               <br>
               <div class="checkout_btn_inner d-flex align-items-center">
                 <input type="hidden" name="name" value="<?= $product->name ?>">

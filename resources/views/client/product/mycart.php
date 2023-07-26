@@ -133,7 +133,7 @@ include '../resources/views/header.php';
                   ?>
                     <a style="border-radius: .5rem;" class="primary-btn" href="/detail_bill?id=<?= $bill->bill_id ?>">Detail</a>
                     <?php
-                    if ($bill->status != 3) {
+                    if ($bill->status == 0 || $bill->status == 1) {
                     ?>
                       <a style="border-radius: .5rem;" class="primary-btn" href="/disable_bill?id=<?= $bill->bill_id ?>">Hủy đơn</a>
                     <?php
